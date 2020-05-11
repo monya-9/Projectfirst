@@ -10,11 +10,11 @@ public class Exercise08 {
 		
 		int sum = 0;
 		int cnt = 0;
-		for (int i=0; i< ary.length; i++) {
-			for(int j = 0; j < ary[i].lenght; j++) {
-				sum += ary[i][j];
+		for (int i=0; i< array.length; i++) {
+			for(int j = 0; j < array[i].length; j++) {
+				sum += array[i][j];
 			}
-			cnt += ary[i].length;
+			cnt += array[i].length;
 		}
 		System.out.println("sum: " + (double)sum / cnt);
 	}
