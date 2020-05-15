@@ -28,7 +28,6 @@ public class AccountExample {
 					}
 				}
 				System.out.println("계좌가 생성되었습니다.");
-			} else if (menu==2) {
 				System.out.println("계좌목록 선택.");
 				for(Account acc : accounts) {
 					if(acc != null) {
@@ -38,7 +37,6 @@ public class AccountExample {
 			} else if (menu==3) {
 				System.out.println("예금 선택.");
 				System.out.println("계좌번호를 입력하세요.");
-				String ano = scn.nextLine();
 				System.out.println("금액을 입력하세요.");
 				int balance = scn.nextInt();
 				// 전체배열중에 값이 있는 경우 && 입력계좌번호와 동일한 건에 처리.
@@ -62,6 +60,7 @@ public class AccountExample {
 						acc.setBalance(result - balance);
 					}
 				}
+				System.out.println("출금 처리가 완료되었습니다.");
 			} else if (menu==5) {
 				System.out.println("종료 선택.");
 				break;
