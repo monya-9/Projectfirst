@@ -37,7 +37,7 @@ public class Board {
 
 	@Override
 	public String toString() {
-		return title + ", " + content + ", " + writer;
+		return "제목: " + title + "\t" + "내용: " + content + "\t" + "작성자: " + writer;
 	}
 
 }

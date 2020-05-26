@@ -48,10 +48,11 @@ public class Boardmain2 {
 
 			} else if (menu == 5) {
 				System.out.println("종료.");
-
+				break;
 			}
 
 		}
+		System.out.println("프로그램 종료.");
 	}
 
 }
