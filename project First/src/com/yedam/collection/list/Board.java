@@ -1,10 +1,10 @@
 package com.yedam.collection.list;
 
 public class Board {
-	private String title; //제목
-	private String content; //내용
-	private String writer; //작성자
-	
+	private String title; // 제목
+	private String content; // 내용
+	private String writer; // 작성자
+
 	public Board(String title, String content, String writer) {
 		this.title = title;
 		this.content = content;
@@ -34,5 +34,10 @@ public class Board {
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
-	
+
+	@Override
+	public String toString() {
+		return title + ", " + content + ", " + writer;
+	}
+
 }
