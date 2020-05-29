@@ -13,10 +13,20 @@ public class Code20200529 {
 		System.out.println("게임시작.");
 		Random random = new Random();
 		System.out.println("번호가 생성되었습니다.");
-		for (int i = 0; i < 3; i++) {
-		selectNumber[i] = random.nextInt(9) + 1;
-		
+
+		boolean t = true;
+
+		while (t) {
+
+			for (int i = 0; i < 3; i++) {
+				selectNumber[i] = random.nextInt(9) + 1;
+			}
+			if (selectNumber[0] != selectNumber[1] && selectNumber[0] != selectNumber[2]
+					&& selectNumber[1] != selectNumber[2]) {
+				t = false;
+			}
 		}
+		t = true;
 
 		while (true) {
 			int strake = 0;
